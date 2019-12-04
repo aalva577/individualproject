@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Individual Project</title>
+      {% else %}
+      <title>Welcome to Antonio Alvarez's Individual Project Home Page </title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Project: <a href="/alvarez">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
